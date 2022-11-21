@@ -70,8 +70,35 @@ class Triangle{
         }
     }
 }
-module.exports = {
-    Triangle:Triangle,
-    Cube:Cube
+
+
+class Cercle
+{   
+    constructor(x,y,rayon,perimetre) {
+        this.x=x;
+        this.y=y;
+        this.rayon=rayon;
+        this.perimetre = perimetre
+    }
+
+    getDiametre(){
+        return 2*this.rayon
+    }
+    getCirconference(){
+
+        return(this.getDiametre()*Math.PI);
+    }
+    getAire(){
+        return (Math.PI*Math.pow(this.rayon,2))
+    }
+    
+
+
+
 }
 
+module.exports = {
+    Triangle:Triangle,
+    Cube:Cube,
+    Cercle:Cercle
+}

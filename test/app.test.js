@@ -4,6 +4,7 @@ const { type } = require('mocha/lib/utils');
 const Cube = require('../src/app').Cube;
 const expect = require('chai').expect;
 const Triangle = require('../src/app').Triangle;
+const Cercle = require('../src/app').Cercle
 
 describe('Testing the Cube Functions', function() {
     it('1. The side length of the Cube', function(done) {
@@ -63,4 +64,10 @@ describe('Test des fonctions du triangle',function(){
         expect(t5.valeurIsNegative()).to.equal(true);
         done();
     })
+});
+
+describe('Test des fonctions du cercle',function(){
+    it('1. Calcule du perimetre du cercle')
+    expect()
+
 });
