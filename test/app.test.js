@@ -73,4 +73,11 @@ describe('Test des fonctions du cercle',function(){
         expect(crl1.getCirconference()).to.equal(188);
         done();
      });
-});
+    it('2.Calcule de Aire du cercle',function(done){
+        let crl2 = new Cercle(10,5,600,50);
+        expect(crl2.getAire()).to.equal(1130973);
+        done();
+
+
+    })
+    });
