@@ -48,7 +48,7 @@ class Triangle{
     }
 
     valeurIsNegative(){
-        if(this.lengthA && this.lengthB && this.lengthC < 0)
+        if(this.lengthA || this.lengthB || this.lengthC < 0)
         {
             return true;
         }

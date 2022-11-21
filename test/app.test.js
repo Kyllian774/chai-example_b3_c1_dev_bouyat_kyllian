@@ -58,4 +58,9 @@ describe('Test des fonctions du triangle',function(){
         expect(t5.getPerimetre()).to.equal(180);
         done();
     })
+    it('5. Valeur du triangle négative',function(done){
+        let t5 = new Triangle(-40,-50,-90);
+        expect(t5.valeurIsNegative()).to.equal(true);
+        done();
+    })
 });
