@@ -86,10 +86,10 @@ class Cercle
     }
     getCirconference(){
 
-        return(this.getDiametre()*Math.PI);
+        return (Math.round(this.getDiametre()*Math.PI));
     }
     getAire(){
-        return (Math.PI*Math.pow(this.rayon,2))
+        return (Math.round(Math.PI*Math.pow(this.rayon,2)));
     }
     
 

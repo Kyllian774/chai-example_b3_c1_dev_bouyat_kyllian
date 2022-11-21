@@ -35,7 +35,7 @@ describe('Test des fonctions du triangle',function(){
         expect(t1.isIsocele()).to.equal(true);
         done();
 
-    })
+    });
     it('2.Le triangle est equilateral', function(done) {
         let t2 = new Triangle(10,10,10,10);
 
@@ -48,26 +48,29 @@ describe('Test des fonctions du triangle',function(){
         let t3 = new Triangle(344,43,6);
         expect(t3.isIsocele()).to.equal(false);
         done();
-    })
+    });
     it('4. Le triangle est-il rectangle',function(done){
         let t4 = new Triangle(40,50,90);
         expect(t4.isRectangle()).to.equal(false);
         done();
-    })
+    });
     it('5. Perimetre du triangle',function(done){
         let t5 = new Triangle(40,50,90);
         expect(t5.getPerimetre()).to.equal(180);
         done();
-    })
-    it('5. Valeur du triangle négative',function(done){
+    });
+    it('6. Valeur du triangle négative',function(done){
         let t5 = new Triangle(-40,-50,-90);
         expect(t5.valeurIsNegative()).to.equal(true);
         done();
-    })
+    });
 });
 
 describe('Test des fonctions du cercle',function(){
-    it('1. Calcule du perimetre du cercle')
-    expect()
 
+    it('1. Calcule de la circonference du cercle',function(done){
+        let crl1 = new Cercle(10,5,30,70);
+        expect(crl1.getCirconference()).to.equal(188);
+        done();
+     });
 });
